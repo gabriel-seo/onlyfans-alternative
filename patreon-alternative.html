@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+  <!-- ============================= -->
+  <!-- SEO: Title & Meta (length OK) -->
+  <!-- ============================= -->
+  <title>Instafans: The Best Patreon Alternative for Creators</title>
+  <meta name="description" content="Switch to Instafans, the top Patreon Alternative. Lower fees, instant payouts, built-in discovery and full creative freedom. Join now.">
+  <link rel="canonical" href="https://instafans.com/patreon-alternative">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Instafans: The Patreon Alternative That Helps You Get Discovered">
+  <meta property="og:description" content="Lower fees, built-in discovery, instant payouts, and true creative freedom. Join creators earning more on Instafans.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://instafans.com/patreon-alternative">
+  <meta property="og:image" content="https://instafans.com/images/patreon-alternative-og.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Better Than Patreon: Instafans for Creators">
+  <meta name="twitter:description" content="Get discovered, protect your privacy, earn more. The creator platform built for everyone.">
+  <meta name="twitter:image" content="https://instafans.com/images/patreon-alternative-twitter.jpg">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="78x82">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind Config -->
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      customPink600: '#ff16cd',
+                      customBlack950: '#000000',
+                      customGray100: '#f5f5f5',
+                      secondary: '#6b7280'
+                  },
+                  backgroundImage: {
+                      'gradient-pink': 'linear-gradient(135deg, #ff16cd 0%, #e91e63 100%)',
+                      'gradient-sign-up': 'linear-gradient(135deg, #000000 0%, #ff16cd 100%)',
+                      'gradient-light': 'linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%)',
+                      'gradient-footer': 'linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%)'
+                  }
+              }
+          }
+      }
+  </script>
+
+  <!-- Custom CSS -->
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+      
+      html {
+          overflow-x: hidden;
+          max-width: 100vw;
+      }
+      
+      body {
+          font-family: 'Inter', sans-serif;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden !important;
+          max-width: 100vw;
+      }
+      
+      .animate-on-scroll {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.6s ease;
+          will-change: transform, opacity;
+      }
+
+      .animate-on-scroll.animated {
+          opacity: 1;
+          transform: translateY(0);
+      }
+      
+      .faq-answer {
+          display: none;
+      }
+
+      /* Screen reader only text */
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+      
+      /* Hide logo text on mobile only */
+      @media (max-width: 1023px) {
+          .logo-text-mobile-hidden {
+              display: none !important;
+          }
+      }
+  </style>
+</head>
+
+<body>
+  <!-- Main Container to prevent horizontal scroll -->
+  <div class="w-full overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="w-full h-[76px] py-8 sticky top-0 bg-white flex justify-center items-center drop-shadow-sm shadow-[0px_4px_38px_0px_#00000006] z-[60]">
+      <div class="px-8 flex justify-between items-center w-full max-w-6xl lg:grid lg:grid-cols-12 lg:px-0">
+          <a class="flex items-center gap-3 min-w-[50px] lg:hidden" href="https://instafans.com/">
+              <img alt="InstaFans Logo" loading="lazy" width="40" height="40" src="./images/favicon.ico">
+              <span class="text-xl font-bold logo-text-mobile-hidden">
+                  <span class="text-black">Insta</span><span style="color: #ff16cd;">fans</span>
+              </span>
+          </a>
+          <a class="hidden lg:flex lg:items-center lg:gap-4" href="https://instafans.com/">
+              <img alt="InstaFans Logo" width="50" height="50" src="./images/favicon.ico">
+              <span class="text-2xl font-bold">
+                  <span class="text-black">insta</span><span style="color: #ff16cd;">fans</span>
+              </span>
+          </a>
+          <div class="flex w-full px-8 gap-4 justify-end lg:px-0 lg:col-start-7 lg:col-end-12 lg:gap-5">
+              <a class="h-11 flex gap-2 items-center justify-center rounded-full text-center text-base text-white font-medium leading-tight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-gradient-to-r from-customBlack950 to-customPink600 hover:from-customBlack950/80 hover:to-customPink600/80 tracking-[0.125em] w-[125px] sm:w-[154px] lg:w-full px-8 whitespace-nowrap" href="https://instafans.com/signup">Sign up</a>
+              <a class="h-11 flex gap-2 items-center justify-center rounded-full text-center text-base leading-tight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-transparent hover:bg-accent border border-current text-customBlack950 font-medium w-[115px] sm:w-[154px] lg:w-full px-8" href="https://instafans.com/login">Login</a>
+          </div>
+      </div>
+  </header>
+
+  <!-- ============================= -->
+  <!-- HERO -->
+  <!-- ============================= -->
+  <section id="hero" class="flex justify-center">
+      <div class="flex flex-col w-full items-center scroll-smooth lg:pt-0">
+          <div class="grid grid-cols-12 w-full max-w-6xl lg:bg-none mt-8 lg:mt-[70px] px-5">
+              <div class="col-start-1 col-span-12 flex flex-col gap-5 lg:col-span-6 lg:mt-[61px] overflow-hidden">
+                  <h1 class="text-3xl leading-normal font-medium text-customBlack950 text-center -tracking-[0.9px] lg:text-6xl lg:leading-[75px] lg:text-left animate-on-scroll break-words">
+                      The Best Patreon Alternative<br>
+                      <span class="font-extrabold leading-normal tracking-[-0.9px] bg-gradient-pink bg-clip-text text-transparent lg:text-[99px] lg:leading-[75px] lg:tracking-[-2px] lg:bg-gradient-sign-up break-words">for Creators</span>
+                  </h1>
+                  <p class="text-center text-2xl not-italic font-normal leading-[160%] tracking-[-0.24px] text-secondary lg:text-2xl lg:leading-relaxed lg:tracking-[0px] lg:text-left lg:font-normal animate-on-scroll">
+                      Looking for a <strong>Patreon Alternative</strong> that helps you earn more, get discovered, and protect your privacy? Instafans is built for modern creators with lower fees, instant payouts, and true creative freedom.
+                  </p>
+                  <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-on-scroll">
+                      <a href="https://instafans.com/signup" class="h-11 flex gap-2 items-center justify-center rounded-full text-center text-base text-white font-medium leading-tight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-gradient-to-r from-customBlack950 to-customPink600 hover:from-customBlack950/80 hover:to-customPink600/80 tracking-[0.125em] px-8 font-bold">
+                          <i class="fas fa-rocket mr-2"></i>Start Earning on Instafans Today
+                      </a>
+                      <a href="#comparison" class="h-11 flex gap-2 items-center justify-center rounded-full text-center text-base leading-tight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-transparent hover:bg-accent border border-current text-customBlack950 font-medium px-8">
+                          Compare Platforms
+                      </a>
+                  </div>
+              </div>
+              <div class="grid col-span-12 mt-8 h-[363px] mb-8 lg:mt-0 lg:col-start-7 lg:col-span-12 lg:h-[597px] overflow-hidden">
+                  <div class="relative w-full max-w-[21rem] mx-auto lg:max-w-full animate-on-scroll bg-white overflow-hidden">
+                      <img alt="InstaFans Patreon Alternative Platform" fetchpriority="high" width="500" height="600" class="w-full h-full object-contain rounded-xl" src="./images/real-content-landing.webp">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- WHY CHOOSE -->
+  <!-- ============================= -->
+  <section id="why" class="relative w-full mx-auto max-w-6xl mt-10 lg:mt-[148px] px-5 overflow-hidden">
+      <div class="text-center mb-16 overflow-hidden">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll break-words">
+              Why Choose This<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customBlack950 break-words">Patreon Alternative</span>
+          </h2>
+          <p class="text-lg lg:text-xl mt-6 max-w-3xl mx-auto text-secondary animate-on-scroll">Creators switch to Instafans when they want growth, lower fees, and stronger privacy. This <strong>Patreon Alternative</strong> is engineered to help you scale memberships without friction.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
+          <!-- Feature 1 -->
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-percentage text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-3">Lower Fees, Higher Earnings</h3>
+              <p class="text-gray-600 mb-3">Keep more of your income with a simple, creator-first commission of <strong>18%</strong>. No hidden extras. Transparent, predictable, and fair.</p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-search text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-3">Get Discovered, Not Just Funded</h3>
+              <p class="text-gray-600 mb-3">Grow beyond your existing audience using built-in discovery, categories, and tags that help fans find you faster.</p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-shield-alt text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-3">Your Privacy, Protected</h3>
+              <p class="text-gray-600 mb-3">Discretion-minded design, security best practices, and verification options help you separate public and personal life.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- COMPARISON -->
+  <!-- ============================= -->
+  <section id="comparison" class="relative mx-auto w-full px-5 py-8 sm:px-16 sm:py-[60px] max-w-6xl bg-gradient-light rounded-[32px] mt-[109px] lg:mt-[175px]">
+      <div class="text-center mb-12">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll">
+              Instafans vs Patreon<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customBlack950">Features</span>
+          </h2>
+          <p class="text-lg lg:text-xl mt-6 max-w-3xl mx-auto animate-on-scroll">
+              <em>Based on publicly available information as of 30 September 2025.</em>
+          </p>
+      </div>
+      
+      <!-- Comparison Table -->
+      <div class="animate-on-scroll">
+          <div class="overflow-x-auto">
+              <table class="w-full border-collapse bg-white rounded-lg shadow-lg">
+                  <thead>
+                      <tr class="bg-gradient-to-r from-customBlack950 to-customPink600 text-white">
+                          <th class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-left text-sm sm:text-lg font-semibold">Category</th>
+                          <th class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center text-sm sm:text-lg font-semibold">
+                              <div class="flex flex-col items-center">
+                                  <img src="./images/favicon.ico" alt="InstaFans" class="w-8 h-8 sm:w-12 sm:h-12 mb-1 sm:mb-2">
+                                  <span class="text-xs sm:text-base">Instafans</span>
+                              </div>
+                          </th>
+                          <th class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center text-sm sm:text-lg font-semibold">
+                              <div class="flex flex-col items-center">
+                                  <div class="w-8 h-8 sm:w-12 sm:h-12 bg-black rounded-lg flex items-center justify-center mb-1 sm:mb-2">
+                                      <svg class="w-5 h-5 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                      </svg>
+                                  </div>
+                                  <span class="text-xs sm:text-base">Patreon</span>
+                              </div>
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200">
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Platform Fees</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-sm sm:text-lg">18% commission</span>
+                              <p class="text-xs sm:text-sm text-gray-600">(simple and transparent)</p>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Tiered platform fees + processing</span>
+                              <p class="text-xs sm:text-sm text-gray-600">(varies by plan/region)</p>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Discovery</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ Built-in discovery page, tags, category browsing</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Primarily relies on your existing audience</span>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Payout Options</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ Global options incl. crypto, card and bank rails</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Availability varies by region and processor</span>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Payout Speed</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ Fast access with methods for international creators</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Timing varies by country and method</span>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Privacy & Discretion</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ Privacy-minded controls and discretion features</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Public pages by default; fewer privacy controls</span>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Content Scope</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ Creative freedom within legal terms (incl. adult)</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Stricter rules; category limitations may apply</span>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Verification & Safety</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ KYC-backed verification available</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Platform checks vary by use case</span>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">International</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ Designed for global creators and currencies</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Availability varies by region</span>
+                          </td>
+                      </tr>
+                      <tr class="hover:bg-gray-50">
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-sm sm:text-base">Analytics</td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-green-600 font-bold text-xs sm:text-base">✓ Earnings and growth-focused dashboards</span>
+                          </td>
+                          <td class="px-2 sm:px-4 lg:px-6 py-3 sm:py-4 text-center">
+                              <span class="text-gray-600 text-xs sm:text-base">Analytics available; depth varies by plan</span>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      
+      <div class="text-center mt-12">
+          <p class="text-lg animate-on-scroll">
+              <a href="/features" class="text-customFuchsia600 hover:text-customIndigo700">See all features</a> · 
+              <a href="/pricing" class="text-customFuchsia600 hover:text-customIndigo700">Compare pricing</a> · 
+              <a href="/signup" class="text-customFuchsia600 hover:text-customIndigo700">Create your account</a>
+          </p>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- ADVANTAGE -->
+  <!-- ============================= -->
+  <section id="advantage" class="relative w-full mx-auto max-w-6xl mt-20 px-5 overflow-hidden">
+      <div class="text-center mb-16 overflow-hidden">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll break-words">
+              The Instafans<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customBlack950 break-words">Advantage</span>
+          </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 overflow-hidden">
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-search text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-3">Built-In Discovery System</h3>
+              <p class="text-gray-600">Reach fans who are actively browsing your niche. Ranking signals reward quality, consistency, and engagement to help you grow.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-shield-alt text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-3">Superior Privacy & Discretion</h3>
+              <p class="text-gray-600">Publish confidently with infrastructure and controls that respect your boundaries and protect your identity.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-globe text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-3">Flexible Global Payouts</h3>
+              <p class="text-gray-600">Earn worldwide with cryptocurrency, card-based rails, and traditional transfers. Faster access means faster reinvestment.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-palette text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-3">True Creative Freedom</h3>
+              <p class="text-gray-600">Support for alternative and adult categories within clear, legal policies—so you can build the community you want.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- COMMON PROBLEMS -->
+  <!-- ============================= -->
+  <section id="common-problems" class="relative w-full mx-auto max-w-6xl mt-20 px-5 overflow-hidden">
+      <div class="text-center mb-16 overflow-hidden">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll break-words">
+              Common Patreon Problems<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customViolet950 break-words">This Alternative Solves</span>
+          </h2>
+          <p class="text-lg lg:text-xl mt-6 max-w-3xl mx-auto text-secondary animate-on-scroll">Frustrated with Patreon? This <strong>Patreon Alternative</strong> addresses high fees, no discovery, slow payouts, and content restrictions. Here's how Instafans solves them.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 overflow-hidden">
+          <!-- Problem 1 -->
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-percentage text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">😤 Problem: High Fees Cut Your Earnings</h3>
+              <p class="text-gray-600 mb-4">Patreon's platform and processing fees can add up, with additional payout charges further reducing take-home revenue.</p>
+              <div class="bg-green-50 border-2 border-green-200 rounded-lg p-4">
+                  <p class="text-green-700 font-semibold"><strong>✓ Instafans Solution:</strong></p>
+                  <p class="text-green-700 text-sm mt-2">Transparent, creator-first pricing at <strong>18%</strong> all-in. Crypto payouts have no extra withdrawal fees.</p>
+              </div>
+          </div>
+          
+          <!-- Problem 2 -->
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-search text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">😤 Problem: No Discovery Feature</h3>
+              <p class="text-gray-600 mb-4">Without a discovery system, new creators struggle to gain subscribers organically and depend heavily on external promotion.</p>
+              <div class="bg-green-50 border-2 border-green-200 rounded-lg p-4">
+                  <p class="text-green-700 font-semibold"><strong>✓ Instafans Solution:</strong></p>
+                  <p class="text-green-700 text-sm mt-2">A built-in discovery page that actively surfaces your content to interested subscribers from day one.</p>
+              </div>
+          </div>
+          
+          <!-- Problem 3 -->
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-clock text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">😤 Problem: Limited Payout Options</h3>
+              <p class="text-gray-600 mb-4">International creators often face long delays, regional restrictions, and limited ways to access funds.</p>
+              <div class="bg-green-50 border-2 border-green-200 rounded-lg p-4">
+                  <p class="text-green-700 font-semibold"><strong>✓ Instafans Solution:</strong></p>
+                  <p class="text-green-700 text-sm mt-2">Flexible global payouts including crypto, Visa card deposits, and SWIFT transfers—built to support worldwide creators.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- CREATIVE FREEDOM -->
+  <!-- ============================= -->
+  <section id="creative-freedom" class="relative mx-auto w-full px-5 py-8 sm:px-16 sm:py-[60px] max-w-6xl bg-gradient-to-r from-customBlack950 to-customPink600 rounded-[32px] mt-16 lg:mt-[70px] text-white overflow-hidden">
+      <div class="text-center overflow-hidden">
+          <div class="text-6xl mb-6 animate-on-scroll">
+              <i class="fas fa-palette text-pink-200"></i>
+          </div>
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed mb-6 animate-on-scroll break-words">
+              Creative Freedom:<br>
+              <span class="font-bold leading-tight lg:leading-relaxed break-words">No Content Restrictions</span>
+          </h2>
+          <p class="text-lg lg:text-xl mb-8 max-w-4xl mx-auto opacity-90 animate-on-scroll">
+              A safe space for <strong>ALL</strong> creators with this <strong>Patreon Alternative</strong>. No arbitrary content restrictions, no sudden policy shifts, and no fear of deplatforming. Alternative and adult categories are explicitly welcomed within clear, legal terms.
+          </p>
+          <div class="bg-white/20 rounded-2xl p-6 max-w-3xl mx-auto animate-on-scroll">
+              <p class="text-lg font-semibold">
+                  <strong>Patreon's limitation:</strong> Past policy controversies and restrictive guidelines have left many creators uncertain and forced adult creators to leave.
+              </p>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- GLOBAL PAYOUTS -->
+  <!-- ============================= -->
+  <section id="global-payouts" class="relative w-full mx-auto max-w-6xl mt-20 px-5 overflow-hidden">
+      <div class="text-center mb-16 overflow-hidden">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll break-words">
+              Global Payouts:<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customBlack950 break-words">Crypto, Visa & More</span>
+          </h2>
+          <p class="text-lg lg:text-xl mt-6 max-w-4xl mx-auto text-secondary animate-on-scroll">
+              Get paid instantly via cryptocurrency, directly to your Visa card, or through SWIFT international transfers. This <strong>Patreon Alternative</strong> is truly global—ideal for international creators who need fast, reliable access to earnings.
+          </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-coins text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">Crypto Payouts</h3>
+              <p class="text-gray-600">Instant cryptocurrency withdrawals with no extra fees</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-credit-card text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">Visa Card Deposits</h3>
+              <p class="text-gray-600">Direct deposits to your Visa card for instant access</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-university text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">SWIFT Transfers</h3>
+              <p class="text-gray-600">International bank transfers for global accessibility</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll overflow-hidden">
+              <div class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-globe text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">Global Coverage</h3>
+              <p class="text-gray-600">Available worldwide with no geographic restrictions</p>
+          </div>
+      </div>
+      
+      <div class="bg-red-50 border-l-4 border-red-400 p-6 animate-on-scroll">
+          <p class="text-red-800 font-semibold">
+              <strong>Patreon's limitation:</strong> Limited to PayPal and bank transfers, often with delays of 7–21 days. Geographic restrictions leave many creators unable to withdraw earnings efficiently.
+          </p>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- WHO SHOULD USE -->
+  <!-- ============================= -->
+  <section id="fit" class="relative mx-auto w-full px-5 py-8 sm:px-16 sm:py-[60px] max-w-6xl bg-sky-50 rounded-[32px] mt-20">
+      <div class="text-center mb-12">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll">
+              Who Should Use<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customBlack950">Instafans</span>
+          </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
+              <div class="w-16 h-16 bg-gradient-to-r from-customIndigo700 to-customFuchsia600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-seedling text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">For Growing Creators</h3>
+              <p class="text-gray-600">Find your first 1,000 true fans with discovery that does the heavy lifting.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
+              <div class="w-16 h-16 bg-gradient-to-r from-customIndigo700 to-customFuchsia600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-globe text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">For International Creators</h3>
+              <p class="text-gray-600">Global payout options and multi-currency support simplify earning abroad.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
+              <div class="w-16 h-16 bg-gradient-to-r from-customIndigo700 to-customFuchsia600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-user-secret text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">For Privacy-Focused Creators</h3>
+              <p class="text-gray-600">Tools and design choices that keep personal life separate from public presence.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
+              <div class="w-16 h-16 bg-gradient-to-r from-customIndigo700 to-customFuchsia600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-palette text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">For Alternative Content</h3>
+              <p class="text-gray-600">Operate under clear, legal guidelines—including adult categories.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
+              <div class="w-16 h-16 bg-gradient-to-r from-customIndigo700 to-customFuchsia600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-coins text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">For Cost-Conscious Creators</h3>
+              <p class="text-gray-600">Simple <strong>18%</strong> commission helps you take home more.</p>
+          </div>
+          
+          <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
+              <div class="w-16 h-16 bg-gradient-to-r from-customIndigo700 to-customFuchsia600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-bitcoin text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-customViolet950 mb-3">For Crypto-Savvy Creators</h3>
+              <p class="text-gray-600">Accept crypto payouts and access funds quickly, worldwide.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- SWITCHING STEPS -->
+  <!-- ============================= -->
+  <section id="switching" class="relative w-full mx-auto max-w-6xl mt-20 px-5 overflow-hidden">
+      <div class="text-center mb-16 overflow-hidden">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll break-words">
+              Switching from Patreon:<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customBlack950 break-words">Steps</span>
+          </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Step 1 -->
+          <div class="text-center animate-on-scroll">
+              <div class="w-20 h-20 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <span class="text-2xl font-bold text-white">1</span>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-4">Create Your Account</h3>
+              <p class="text-gray-600 text-left"><a href="https://instafans.com/signup" class="text-customPink600 hover:text-customBlack950">Secure your handle</a> and set your preferred payout method.</p>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="text-center animate-on-scroll">
+              <div class="w-20 h-20 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <span class="text-2xl font-bold text-white">2</span>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-4">Set Up Your Profile</h3>
+              <p class="text-gray-600 text-left">Write a benefit-driven bio, upload assets, and publish your first posts.</p>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="text-center animate-on-scroll">
+              <div class="w-20 h-20 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <span class="text-2xl font-bold text-white">3</span>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-4">Announce Your Move</h3>
+              <p class="text-gray-600 text-left">Share your new link and offer a welcome perk for early supporters.</p>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="text-center animate-on-scroll">
+              <div class="w-20 h-20 bg-gradient-to-r from-customBlack950 to-customPink600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <span class="text-2xl font-bold text-white">4</span>
+              </div>
+              <h3 class="text-xl font-bold text-customBlack950 mb-4">Grow with Discovery</h3>
+              <p class="text-gray-600 text-left">Tag content, select categories, and let discovery bring in new fans.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- CTA -->
+  <!-- ============================= -->
+  <section id="cta" class="relative mx-auto w-full px-5 py-8 sm:px-16 sm:py-[60px] max-w-6xl bg-gradient-to-r from-customBlack950 to-customPink600 rounded-[32px] mt-16 lg:mt-[70px] text-white overflow-hidden">
+      <div class="text-center overflow-hidden">
+          <div class="text-6xl mb-6 animate-on-scroll">
+              <i class="fas fa-rocket text-pink-200"></i>
+          </div>
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed mb-6 animate-on-scroll break-words">
+              Join the Patreon Alternative<br>
+              <span class="font-bold leading-tight lg:leading-relaxed break-words">Today</span>
+          </h2>
+          <p class="text-lg lg:text-xl mb-12 max-w-3xl mx-auto opacity-90 animate-on-scroll">Claim your handle, set your tiers, and start earning on a platform built for discovery, privacy, and fair fees.</p>
+          
+          <a href="https://instafans.com/signup" class="inline-flex h-12 items-center justify-center rounded-full text-center text-base bg-white text-gray-900 font-bold leading-tight transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none px-8 animate-on-scroll">
+              <i class="fas fa-rocket mr-2"></i>
+              <span>Join Instafans Now</span>
+          </a>
+          <p class="text-sm opacity-75 mt-4 animate-on-scroll">
+              <a href="/features" class="text-white hover:text-yellow-200">See all features</a> · 
+              <a href="/pricing" class="text-white hover:text-yellow-200">Compare pricing</a> · 
+              <a href="/help" class="text-white hover:text-yellow-200">Get support</a>
+          </p>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- FAQ -->
+  <!-- ============================= -->
+  <section id="faq" class="bg-gray-50 py-16 overflow-hidden">
+      <div class="max-w-4xl mx-auto px-5 overflow-hidden">
+          <div class="text-center mb-16 overflow-hidden">
+              <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll break-words">
+                  Patreon Alternative<br>
+                  <span class="font-bold leading-tight lg:leading-relaxed text-customBlack950 break-words">FAQ</span>
+              </h2>
+          </div>
+          
+          <div class="space-y-4">
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      Can I use Patreon and Instafans together?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">Yes. Many creators run both during transition and gradually shift perks to Instafans.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      How do I move subscribers over?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">Announce the switch, share your new link, and offer a limited-time perk. Remind fans for 2–4 weeks.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      What content is allowed?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">Most legal categories are supported, including alternative and adult. Review our content policy for details.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      How fast are payouts?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">Instafans supports options designed for speed and global access. Timing depends on method and region.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      What are Instafans fees?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">A simple, creator-first <strong>18% commission</strong>. No hidden charges.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      Is my data private?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">Yes. We use security best practices and discretion features to protect your information.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      Do I need an existing audience?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">No. The discovery system helps new fans find you by category and tags.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      Which payout methods are supported?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">Crypto, card-based rails, and traditional bank transfers (availability by country).</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      How does discovery work?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">Fans browse categories and tags; ranking rewards quality, engagement, and consistency.</p>
+                  </div>
+              </div>
+              
+              <div class="bg-white rounded-2xl shadow-lg animate-on-scroll">
+                  <button class="w-full px-6 py-4 text-left font-semibold text-customBlack950 flex justify-between items-center hover:bg-gray-50 rounded-2xl transition-colors" onclick="toggleFAQ(this)">
+                      What is Founder/OG status?
+                      <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                  </button>
+                  <div class="faq-answer px-6 pb-4">
+                      <p class="text-secondary">A limited-time designation for early creators; fee remains <strong>18%</strong> either way.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- LEGAL & TRUST -->
+  <!-- ============================= -->
+  <section id="legal" class="relative w-full mx-auto max-w-6xl mt-20 px-5 overflow-hidden">
+      <div class="text-center mb-8 overflow-hidden">
+          <h2 class="text-[26px] lg:text-[40px] font-light leading-tight lg:leading-relaxed animate-on-scroll break-words">
+              Trust, Security and<br>
+              <span class="font-bold leading-tight lg:leading-relaxed text-customViolet950 break-words">Compliance</span>
+          </h2>
+          <p class="text-lg lg:text-xl mt-6 max-w-3xl mx-auto text-secondary animate-on-scroll">
+              <strong>Trust signals:</strong> KYC-verified platform, secure infrastructure, and clear terms.
+          </p>
+          <p class="text-lg lg:text-xl mt-4 max-w-3xl mx-auto text-secondary animate-on-scroll">
+              <strong>Disclaimers:</strong> Results may vary by content and effort. <em>"Patreon" is a trademark of Patreon, Inc.</em> Instafans is an independent platform.
+          </p>
+          <p class="text-lg mt-6 animate-on-scroll">
+              <a href="/terms" class="text-customFuchsia600 hover:text-customIndigo700">Terms of service</a> · 
+              <a href="/policy" class="text-customFuchsia600 hover:text-customIndigo700">Content policy</a>
+          </p>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w-full max-w-6xl mb-3 mx-auto p-2 lg:p-8 relative bg-gradient-footer rounded-[32px] flex items-center justify-center flex-col h-fit mt-20">
+      <div class="w-full flex flex-col justify-center items-center mb-8 mt-6">
+          <div class="text-[21px] uppercase text-customBlack950 text-center font-bold leading-7 lg:text-[23px]">
+              Ready to make the switch?
+          </div>
+          <div class="text-[21px] text-center font-bold leading-10 mt-8 max-w-xl lg:text-[32px] lg:whitespace-nowrap">
+              Join InstaFans Today!
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 mt-8">
+              <a href="https://instafans.com/signup" class="h-11 flex gap-2 items-center justify-center rounded-full text-center text-base text-white font-medium leading-tight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-gradient-to-r from-customBlack950 to-customPink600 hover:from-customBlack950/80 hover:to-customPink600/80 tracking-[0.125em] px-8 font-bold">
+                  <i class="fas fa-crown mr-2"></i>Start as OG Creator
+              </a>
+              <a href="#comparison" class="h-11 flex gap-2 items-center justify-center rounded-full text-center text-base leading-tight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-transparent hover:bg-accent border border-current text-customBlack950 font-medium px-8">
+                  Learn More
+              </a>
+          </div>
+      </div>
+      
+      <div class="px-16 pb-16 pt-0">
+          <div class="flex flex-col gap-4 w-full items-center mt-8">
+              <div class="flex flex-col gap-y-4 items-center xl:flex-row">
+                  <div class="flex items-center">
+                      <a href="https://www.instafans.com/blog/" class="text-sm text-customViolet950 hover:text-customFuchsia600">Blog</a>
+                      <div class="rounded-full w-1 h-1 bg-pink-500 mx-4"></div>
+                      <a href="https://instafans.com/partners" class="text-sm text-customViolet950 hover:text-customFuchsia600">Contact us</a>
+                  </div>
+                  <div class="hidden xl:block rounded-full w-1 h-1 bg-pink-500 mx-4 self-center justify-self-center"></div>
+                  <div class="flex">
+                      <a href="https://instafans.com/terms" class="text-sm text-customViolet950 hover:text-customFuchsia600">T&C</a>
+                      <div class="rounded-full w-1 h-1 bg-pink-500 mx-4 self-center justify-self-center"></div>
+                      <a href="https://instafans.com/privacy" class="text-sm text-customViolet950 hover:text-customFuchsia600">Privacy policy</a>
+                  </div>
+              </div>
+              
+              <!-- LATAM & Compare Sections -->
+              <div class="mt-6 flex flex-col md:flex-row justify-center items-start gap-8 md:gap-16">
+                  <!-- LATAM Section -->
+                  <div class="text-center">
+                      <h4 class="text-sm font-bold text-customBlack950 mb-3 uppercase tracking-wider">LATAM</h4>
+                      <div class="flex flex-col gap-2">
+                          <a href="./como-funciona-onlyfans.html" class="text-sm text-customBlack950 hover:text-customPink600 transition-colors">📖 Guía OnlyFans</a>
+                          <a href="./vender-fotos-pies.html" class="text-sm text-customBlack950 hover:text-customPink600 transition-colors">Monetiza tus Fotos de Pies</a>
+                      </div>
+                  </div>
+                  
+                  <!-- Compare Section -->
+                  <div class="text-center">
+                      <h4 class="text-sm font-bold text-customBlack950 mb-3 uppercase tracking-wider">Compare</h4>
+                      <div class="flex flex-col gap-2">
+                          <a href="./index.html" class="text-sm text-customBlack950 hover:text-customPink600 transition-colors">OnlyFans Alternative</a>
+                          <a href="./patreon-alternative.html" class="text-sm text-customPink600 hover:text-customBlack950 font-semibold transition-colors">Patreon Alternative</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <p class="text-sm text-customBlack950 text-center mt-4">&copy; 2024 Instafans. The smart Patreon alternative for creators who want more.</p>
+          </div>
+      </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script>
+      // FAQ toggle functionality
+      function toggleFAQ(button) {
+          const answer = button.nextElementSibling;
+          const icon = button.querySelector('i');
+          
+          if (answer.style.display === 'block') {
+              answer.style.display = 'none';
+              icon.style.transform = 'rotate(0deg)';
+          } else {
+              // Close all other FAQs
+              document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+              document.querySelectorAll('button i').forEach(i => i.style.transform = 'rotate(0deg)');
+              
+              // Open this FAQ
+              answer.style.display = 'block';
+              icon.style.transform = 'rotate(180deg)';
+          }
+      }
+
+      // Scroll animations
+      function animateOnScroll() {
+          const elements = document.querySelectorAll('.animate-on-scroll');
+          
+          elements.forEach(element => {
+              const elementTop = element.getBoundingClientRect().top;
+              const elementVisible = 150;
+              
+              if (elementTop < window.innerHeight - elementVisible) {
+                  element.classList.add('animated');
+              }
+          });
+      }
+
+      // Event listeners
+      document.addEventListener('DOMContentLoaded', function() {
+          // Prevent any potential layout shifts
+          document.body.style.overflowX = 'hidden';
+          
+          // Initialize scroll animations with a small delay to prevent initial scrollbar
+          setTimeout(() => {
+              animateOnScroll();
+              window.addEventListener('scroll', animateOnScroll);
+          }, 100);
+          
+          // Add smooth scrolling to all anchor links
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const target = document.querySelector(this.getAttribute('href'));
+                  if (target) {
+                      target.scrollIntoView({
+                          behavior: 'smooth',
+                          block: 'start'
+                      });
+                  }
+              });
+          });
+      });
+
+      // Intersection Observer for better performance
+      if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add('animated');
+                  }
+              });
+          }, {
+              threshold: 0.1,
+              rootMargin: '0px 0px -50px 0px'
+          });
+
+          document.querySelectorAll('.animate-on-scroll').forEach(el => {
+              observer.observe(el);
+          });
+      }
+  </script>
+  </div>
+</body>
+</html>
